@@ -1,0 +1,15 @@
+# Pixiv remote rule set for Loon
+#
+# This file intentionally contains match rules only. The outbound policy is
+# assigned by the [Remote Rule] entry in the main Loon configuration.
+
+# Core Pixiv services: website, app/API, login/OAuth, and image delivery.
+DOMAIN-SUFFIX,pixiv.net
+DOMAIN-SUFFIX,pximg.net
+
+# Official related services (remove these four lines if only the main Pixiv
+# service is needed).
+DOMAIN-SUFFIX,fanbox.cc
+DOMAIN-SUFFIX,pixivision.net
+DOMAIN-SUFFIX,pixiv.me
+DOMAIN-SUFFIX,pixivsketch.net

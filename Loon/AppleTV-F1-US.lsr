@@ -1,0 +1,19 @@
+# Apple TV F1 (U.S.) remote rule set for Loon
+#
+# Purpose: route only the Apple endpoints currently observed to be required
+# for watching Formula 1 on Apple TV from outside the U.S.
+#
+# IMPORTANT:
+# - Assign this remote rule to a stable U.S. policy/proxy in Loon.
+# - This file contains match rules only; it does not hard-code a policy name.
+# - Keep this rule above broader Apple DIRECT rules when rule order matters.
+#
+# Last reviewed: 2026-09-12
+
+# Playback / entitlement
+DOMAIN,play-edge.itunes.apple.com
+DOMAIN,known-issues.apple.com
+
+# HLS / live stream delivery
+DOMAIN,hls-amt.itunes.apple.com
+DOMAIN,linear.tv.apple.com

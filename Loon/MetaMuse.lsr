@@ -1,0 +1,25 @@
+# Meta Muse remote rule set for Loon
+#
+# This file routes the local Muse client, its Meta AI transport, the current
+# account handoff, and first-party assets used by the public web client.
+# The Muse Secure VM runs in Meta's cloud; its own browser egress is not
+# controlled by Loon on the user's device.
+
+# Muse client, authentication service, and Meta AI transport.
+DOMAIN-SUFFIX,muse.ai
+DOMAIN-SUFFIX,meta.ai
+DOMAIN,auth.meta.com
+
+# Current Meta account handoff observed from muse.ai.
+DOMAIN,www.facebook.com
+DOMAIN,www.instagram.com
+
+# First-party scripts, media, embedded artifacts, and app resources used by
+# the current public Muse web client.
+DOMAIN,connect.facebook.net
+DOMAIN-SUFFIX,fbcdn.net
+DOMAIN-SUFFIX,cdninstagram.com
+DOMAIN-SUFFIX,fbsbx.com
+DOMAIN-SUFFIX,metaaiusercontent.com
+DOMAIN-SUFFIX,ecto1usercontent.com
+DOMAIN,meta-agents-apps.workers.dev

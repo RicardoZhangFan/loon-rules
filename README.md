@@ -86,11 +86,11 @@ https://raw.githubusercontent.com/RicardoZhangFan/loon-rules/main/Loon/MetaMuse.
 - `fbcdn.net`、`cdninstagram.com`、`fbsbx.com`、`connect.facebook.net`：第一方脚本、媒体和登录资源。
 - `metaaiusercontent.com`、`ecto1usercontent.com`、`meta-agents-apps.workers.dev`：当前 Web 客户端声明的内容和嵌入资源域名。
 
-这里没有加入整个 `facebook.com`、`instagram.com`、`meta.com`、`stripe.com` 或 Google 域名，以免把其他 App 的全部流量一起送进美国策略。如果你之后启用了 Facebook/Instagram Connector，并且只在 OAuth 授权阶段出现循环，再临时把下面两条加到本地规则中测试：
+这里没有加入整个 `facebook.com`、`instagram.com`、`meta.com`、`stripe.com` 或 Google 域名，以免把其他 App 的全部流量一起送进美国策略。如果你之后启用了 Facebook/Instagram Connector，并且只在 OAuth 授权阶段出现循环，可临时在主配置的 `[Rule]` 段加入：
 
-```text
-DOMAIN-SUFFIX,facebook.com
-DOMAIN-SUFFIX,instagram.com
+```ini
+DOMAIN-SUFFIX,facebook.com,美国策略
+DOMAIN-SUFFIX,instagram.com,美国策略
 ```
 
 ### Loon 能解决什么、不能解决什么

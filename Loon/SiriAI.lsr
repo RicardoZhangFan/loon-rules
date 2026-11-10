@@ -1,0 +1,44 @@
+# Siri AI and related Apple services for Loon
+# Supplied domain list; select the outbound policy in the Remote Rule entry.
+# This list also covers shared iCloud, Private Relay and location services.
+# Keyword matching is broad and may match unrelated domains.
+
+# Siri and dictation
+DOMAIN-SUFFIX,guzzoni.apple.com
+DOMAIN-SUFFIX,smoot.apple.com
+DOMAIN-SUFFIX,siri.apple.com
+DOMAIN-SUFFIX,api-siri-prod.apple.com
+DOMAIN-SUFFIX,seed-siri-apple-com.v.aaplimg.com
+DOMAIN-SUFFIX,nlp.apple.com
+DOMAIN-SUFFIX,prod.dss.apple.com
+
+# Relay endpoints
+DOMAIN-SUFFIX,apple-relay.apple.com
+DOMAIN-SUFFIX,apple-native-relay.apple.com
+DOMAIN-SUFFIX,apple-relay.cloudflare.com
+DOMAIN-SUFFIX,apple-carry-relay.cloudflare.com
+DOMAIN-SUFFIX,apple-relay.fastly-edge.com
+DOMAIN-SUFFIX,apple-relay.akamaized.net
+DOMAIN-SUFFIX,cp4.cloudflare.com
+
+# Private Relay endpoints
+DOMAIN-SUFFIX,mask.icloud.com
+DOMAIN-SUFFIX,mask-h2.icloud.com
+DOMAIN-SUFFIX,mask-api.icloud.com
+DOMAIN-SUFFIX,mask-boot.icloud.com
+DOMAIN-SUFFIX,mask-canary.icloud.com
+DOMAIN-SUFFIX,mask.apple-dns.net
+DOMAIN-SUFFIX,mask-t.apple-dns.net
+DOMAIN-SUFFIX,mask-api.fe.apple-dns.net
+DOMAIN-SUFFIX,mask-api.fe2.apple-dns.net
+
+# Shared iCloud and CloudKit gateways
+DOMAIN-SUFFIX,gateway.icloud.com
+DOMAIN-SUFFIX,probe.icloud.com
+DOMAIN-SUFFIX,api.apple-cloudkit.com
+
+# Location services: may affect Maps location behavior
+DOMAIN,gspe1-ssl.ls.apple.com
+DOMAIN-SUFFIX,wps.apple.com
+
+DOMAIN-KEYWORD,siri

@@ -1,3 +1,10 @@
 {
-  "seen_articles": {}
+  "seen_articles": {},
+  "page_hashes": {
+    "https://www.rockstargames.com/VI": "2886a54a2450e337378610917f2b347ad9fc543aef737894f0925a709d71c5a5",
+    "https://store.steampowered.com/api/appdetails?appids=4814120&cc=us&l=english": "becc3795f59efc112cf6512f74e63d85cdee7f6b7fc5b0deb35ed9f0fc238c04",
+    "https://store.steampowered.com/app/4814120/ANANTA/": "7bb12d46d2de41cb6a487e11bad3cfb35c72870c6501c7d8491541c74c01348d",
+    "https://news.blizzard.com/en-us/feed/diablo-4": "775cd5b5609631549061ea981a38ea20a20a2eb1542811d2be0d7dfb72aa02bd",
+    "https://forza.net/news": "ce72bfde47cd5830ff0cff9ba1645873a49f871cc0cf18b015e4420dc45940b3"
+  }
 }

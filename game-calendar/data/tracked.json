@@ -55,7 +55,8 @@
         "系列新作发售",
         "PS5 版本",
         "重大 DLC"
-      ]
+      ],
+      "next_to_watch": "地平线 6 PS5 版 2027-01-26，Premium 提前体验 2027-01-21"
     }
   ],
   "events": [
@@ -75,6 +76,15 @@
       "date": "2027-01-15",
       "type": "release",
       "source_url": "https://store.steampowered.com/app/4814120/ANANTA/",
+      "verified_at": "2026-11-13T00:00:00Z"
+    },
+    {
+      "id": "forza-horizon-6-ps5-release",
+      "game_id": "forza_horizon",
+      "title": "🎮 极限竞速：地平线 6｜PS5 发售",
+      "date": "2027-01-26",
+      "type": "release",
+      "source_url": "https://support.forza.net/hc/en-us/articles/56161269430675-Forza-Horizon-6-on-PlayStation-5-FAQ",
       "verified_at": "2026-11-13T00:00:00Z"
     }
   ]

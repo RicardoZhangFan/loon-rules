@@ -46,15 +46,15 @@
       ]
     },
     {
-      "id": "last_epoch",
-      "name": "最后纪元 Last Epoch",
-      "platform": "PC",
-      "monitor": "last_epoch",
-      "source_url": "https://forum.lastepoch.com/c/news/64",
-      "next_to_watch": "S6 新赛季开启（尚未公布日期）",
+      "id": "forza_horizon",
+      "name": "极限竞速：地平线 Forza Horizon 系列",
+      "platform": "PS5 / Xbox / PC",
+      "monitor": "forza",
+      "source_url": "https://forza.net/news",
       "interests": [
-        "新赛季开服",
-        "Orobyss 资料片"
+        "系列新作发售",
+        "PS5 版本",
+        "重大 DLC"
       ]
     }
   ],

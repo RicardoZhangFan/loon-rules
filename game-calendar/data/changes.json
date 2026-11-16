@@ -1,1 +1,7 @@
-[]
+[
+  {
+    "game": "无限大 ANANTA",
+    "url": "https://store.steampowered.com/api/appdetails?appids=4814120&cc=us&l=english",
+    "change": "官方页面的日期/标题元信息变化，请人工核实后修改 data/tracked.json"
+  }
+]

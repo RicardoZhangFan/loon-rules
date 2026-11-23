@@ -48,11 +48,19 @@ def build_ics(cfg):
         if event["game_id"] not in games:  # prevent removed games from recurring
             continue
         date = dt.date.fromisoformat(event["date"])
-        end = date + dt.timedelta(days=1)
+        if event.get("start_at"):
+            # A precisely scheduled broadcast; the UTC start displays in the viewer's local time.
+            start = dt.datetime.fromisoformat(event["start_at"])
+            if start.tzinfo is None or start.utcoffset() is None:
+                raise ValueError("Timed events require a timezone offset: " + event["id"])
+            date_fields = ["DTSTART:" + start.astimezone(dt.timezone.utc).strftime("%Y%m%dT%H%M%SZ")]
+        else:
+            end = date + dt.timedelta(days=1)
+            date_fields = ["DTSTART;VALUE=DATE:" + date.strftime("%Y%m%d"),
+                           "DTEND;VALUE=DATE:" + end.strftime("%Y%m%d")]
         stable_uid = re.sub(r"[^a-z0-9_-]", "", event["id"].lower())
         lines.extend(["BEGIN:VEVENT", "UID:" + stable_uid + "@ricardozhangfan.game-calendar",
-                      "DTSTAMP:" + now, "DTSTART;VALUE=DATE:" + date.strftime("%Y%m%d"),
-                      "DTEND;VALUE=DATE:" + end.strftime("%Y%m%d"),
+                      "DTSTAMP:" + now] + date_fields + [
                       "SUMMARY:" + esc(event["title"]),
                       "DESCRIPTION:" + esc("平台：" + games[event["game_id"]]["platform"] + "\n来源：" + event["source_url"]),
                       "URL:" + event["source_url"], "STATUS:CONFIRMED", "TRANSP:TRANSPARENT"])

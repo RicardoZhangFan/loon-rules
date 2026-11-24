@@ -1,0 +1,384 @@
+{
+  "version": 1,
+  "as_of": "2026-11-24",
+  "region": "上海零售市场（含进口）",
+  "description": "以下为预计集中供应及性价比窗口，按年核查调整。日期为含首尾日的估计窗口，非实时报价。",
+  "sources": {
+    "localStraw": "https://www.shanghai.gov.cn/",
+    "strawNews": "https://m.sohu.com/a/1105598869_121286085",
+    "strawSeason": "https://nyncw.sh.gov.cn/mtbd/20260116/bcb2b2dca85248918af2c3cdc8b91fb3.html",
+    "cherry": "https://sh.people.com.cn/n2/2026/1119/c176737-41755476.html",
+    "cherry2": "https://paper.xinmin.cn/html/xmwb/2026-11-12/5/252021.html",
+    "market": "https://www.freshplaza.cn/article/9894791/zhi-li-che-li-zi-dao-huo-zeng-jia-jie-ge-hui-luo-ao-zhou-you-tao-shang-shi/",
+    "spring": "https://www.51ldb.com/shsldb/cj/content/019e165b310ac001000066d533acd97d.html",
+    "durian": "https://www.fengxian.gov.cn/gzms/20260513/106986.html",
+    "summer": "https://sh.people.com.cn/n2/2025/0716/c138654-41292487.html",
+    "peach": "https://www.jfdaily.com/sgh/detail?id=4018219",
+    "autumn": "https://nyncw.sh.gov.cn/mtbd/20261010/3ea0608f325c485eb125b62916323dff.html",
+    "citrus": "https://www.shanghai.gov.cn/nw17239/20261105/bc71f0994e974a1e9aac9be04665f5c1.html",
+    "local": "https://nyncw.sh.gov.cn/mtbd/20180705/0009-39010.html",
+    "broad": "https://www.dongfangbubai.com/b/20260823/135127.shtml"
+  },
+  "baseline": [
+    {
+      "id": "strawberry",
+      "title": "🍓 草莓（红颜、章姬）",
+      "start_mmdd": "12-20",
+      "end_mmdd": "03-15",
+      "note": "11月起尝鲜；上海、安徽、丹东多产地接力。常规红颜目标20–25元/斤以内，15元/斤以内视品质为好价；参考阈值而非行情承诺。",
+      "confidence": "高",
+      "refs": [
+        "strawNews",
+        "strawSeason",
+        "market"
+      ]
+    },
+    {
+      "id": "chilean-cherry",
+      "title": "🍒 智利车厘子",
+      "start_mmdd": "12-15",
+      "end_mmdd": "01-31",
+      "note": "10月下旬空运首批；11月底至12月海运陆续上量。重点看红色2J/3J同级同净重；目标2J≤35元/斤、3J≤45元/斤，3J≤30元/斤为好价参考。节前可能反弹。",
+      "confidence": "高",
+      "refs": [
+        "cherry",
+        "cherry2"
+      ]
+    },
+    {
+      "id": "blueberry",
+      "title": "🫐 云南蓝莓",
+      "start_mmdd": "12-01",
+      "end_mmdd": "04-30",
+      "note": "冬春产区接力；同果径比较净重单价，优先鲜果硬度和风味。2026年11月供应已增加。",
+      "confidence": "中",
+      "refs": [
+        "cherry2",
+        "market",
+        "spring"
+      ]
+    },
+    {
+      "id": "mandarin-local",
+      "title": "🍊 上海地产蜜橘",
+      "start_mmdd": "11-01",
+      "end_mmdd": "12-15",
+      "note": "崇明、长兴、横沙；宫川蜜橘11月初进入采收高峰。",
+      "confidence": "高",
+      "refs": [
+        "citrus"
+      ]
+    },
+    {
+      "id": "winter-citrus",
+      "title": "🍊 砂糖橘、沃柑、耙耙柑",
+      "start_mmdd": "12-20",
+      "end_mmdd": "03-15",
+      "note": "不同品种依次上市，砂糖橘偏12–2月，沃柑、耙耙柑偏冬末春初；同品种分开比较。",
+      "confidence": "中",
+      "refs": [
+        "citrus",
+        "broad"
+      ]
+    },
+    {
+      "id": "orange",
+      "title": "🍊 赣南脐橙、冰糖橙",
+      "start_mmdd": "12-01",
+      "end_mmdd": "02-15",
+      "note": "冬季成熟后购买；产地与等级影响价格。",
+      "confidence": "中",
+      "refs": [
+        "broad"
+      ]
+    },
+    {
+      "id": "spring-mango",
+      "title": "🥭 海南、广西芒果",
+      "start_mmdd": "03-15",
+      "end_mmdd": "05-31",
+      "note": "早春海南后续接广西等产区；品种差异大，具体上市以当年核查为准。",
+      "confidence": "中",
+      "refs": [
+        "broad"
+      ]
+    },
+    {
+      "id": "mulberry",
+      "title": "桑葚",
+      "start_mmdd": "04-15",
+      "end_mmdd": "05-31",
+      "note": "上海及江浙春季鲜果，宜短期购买。",
+      "confidence": "中",
+      "refs": [
+        "spring",
+        "local"
+      ]
+    },
+    {
+      "id": "loquat",
+      "title": "枇杷（白沙、白玉）",
+      "start_mmdd": "05-10",
+      "end_mmdd": "06-10",
+      "note": "苏州东山等江浙枇杷的短窗口，避免太早买。",
+      "confidence": "高",
+      "refs": [
+        "spring",
+        "local",
+        "broad"
+      ]
+    },
+    {
+      "id": "domestic-cherry",
+      "title": "🍒 国产大樱桃",
+      "start_mmdd": "05-20",
+      "end_mmdd": "06-20",
+      "note": "山东、辽宁等露地大樱桃集中上市预估，与冬季智利车厘子区分。",
+      "confidence": "中",
+      "refs": [
+        "broad"
+      ]
+    },
+    {
+      "id": "durian",
+      "title": "泰国金枕榴莲",
+      "start_mmdd": "04-25",
+      "end_mmdd": "06-15",
+      "note": "泰国东部产区集中到货预估；看每斤整果、出肉率和成熟度，勿混同不同产地。",
+      "confidence": "高",
+      "refs": [
+        "durian",
+        "spring"
+      ]
+    },
+    {
+      "id": "mangosteen",
+      "title": "山竹",
+      "start_mmdd": "05-01",
+      "end_mmdd": "07-15",
+      "note": "东南亚进口货集中供应，优先新鲜蒂头和有弹性的果壳。",
+      "confidence": "中",
+      "refs": [
+        "durian",
+        "broad"
+      ]
+    },
+    {
+      "id": "lychee",
+      "title": "荔枝（妃子笑、桂味、糯米糍）",
+      "start_mmdd": "05-25",
+      "end_mmdd": "07-05",
+      "note": "早熟妃子笑在前，桂味、糯米糍在后；天气影响产量。",
+      "confidence": "中",
+      "refs": [
+        "spring"
+      ]
+    },
+    {
+      "id": "bayberry",
+      "title": "杨梅（东魁、荸荠种）",
+      "start_mmdd": "06-05",
+      "end_mmdd": "07-05",
+      "note": "江浙短窗口，按产区错峰；暴雨后品质可能下降。",
+      "confidence": "高",
+      "refs": [
+        "spring",
+        "broad"
+      ]
+    },
+    {
+      "id": "watermelon",
+      "title": "🍉 西瓜（8424、麒麟瓜）",
+      "start_mmdd": "05-25",
+      "end_mmdd": "07-31",
+      "note": "上海及周边夏季主力，优先成熟、低价阶段。",
+      "confidence": "高",
+      "refs": [
+        "spring",
+        "summer"
+      ]
+    },
+    {
+      "id": "melon",
+      "title": "🍈 甜瓜、哈密瓜",
+      "start_mmdd": "06-01",
+      "end_mmdd": "08-31",
+      "note": "夏季供应充足，产地及品种有差异。",
+      "confidence": "中",
+      "refs": [
+        "spring",
+        "summer"
+      ]
+    },
+    {
+      "id": "peach",
+      "title": "🍑 南汇、阳山水蜜桃",
+      "start_mmdd": "07-05",
+      "end_mmdd": "08-10",
+      "note": "2026南汇7月9日正式上市；选成熟度好、当天采摘的果。",
+      "confidence": "高",
+      "refs": [
+        "peach",
+        "summer"
+      ]
+    },
+    {
+      "id": "flat-peach",
+      "title": "🍑 蟠桃、奉贤黄桃",
+      "start_mmdd": "07-15",
+      "end_mmdd": "08-25",
+      "note": "品种分期，关注金山蟠桃、奉贤黄桃实际上市。",
+      "confidence": "中",
+      "refs": [
+        "summer"
+      ]
+    },
+    {
+      "id": "grape",
+      "title": "🍇 巨峰、夏黑、马陆葡萄",
+      "start_mmdd": "07-10",
+      "end_mmdd": "09-15",
+      "note": "马陆7月起上市；不同品种价格差异大。",
+      "confidence": "高",
+      "refs": [
+        "summer",
+        "autumn"
+      ]
+    },
+    {
+      "id": "shine-muscat",
+      "title": "🍇 阳光玫瑰",
+      "start_mmdd": "08-15",
+      "end_mmdd": "10-10",
+      "note": "露地果进入集中供应期，关注香气与成熟度，不以粒径作为唯一标准。",
+      "confidence": "中",
+      "refs": [
+        "autumn",
+        "broad"
+      ]
+    },
+    {
+      "id": "pear",
+      "title": "🍐 翠冠梨、庄行蜜梨、秋月梨",
+      "start_mmdd": "07-20",
+      "end_mmdd": "10-15",
+      "note": "夏梨与秋梨依次上市，注意品种。",
+      "confidence": "中",
+      "refs": [
+        "summer",
+        "autumn"
+      ]
+    },
+    {
+      "id": "fig",
+      "title": "无花果",
+      "start_mmdd": "08-01",
+      "end_mmdd": "09-30",
+      "note": "崇明等地夏秋鲜果，保质期短。",
+      "confidence": "中",
+      "refs": [
+        "summer"
+      ]
+    },
+    {
+      "id": "plum",
+      "title": "新疆西梅",
+      "start_mmdd": "08-20",
+      "end_mmdd": "09-30",
+      "note": "关注露地果上量与价格下降，避免头茬溢价。",
+      "confidence": "中",
+      "refs": [
+        "broad"
+      ]
+    },
+    {
+      "id": "jujube",
+      "title": "冬枣",
+      "start_mmdd": "09-10",
+      "end_mmdd": "10-20",
+      "note": "露地脆枣成熟后集中供应。",
+      "confidence": "高",
+      "refs": [
+        "autumn"
+      ]
+    },
+    {
+      "id": "pomegranate",
+      "title": "石榴（软籽）",
+      "start_mmdd": "09-15",
+      "end_mmdd": "10-31",
+      "note": "秋季集中上市，优先新鲜当季果。",
+      "confidence": "中",
+      "refs": [
+        "broad"
+      ]
+    },
+    {
+      "id": "kiwi",
+      "title": "🥝 国产猕猴桃",
+      "start_mmdd": "09-15",
+      "end_mmdd": "11-15",
+      "note": "国产品种错峰成熟，购买后按需催熟。",
+      "confidence": "高",
+      "refs": [
+        "autumn"
+      ]
+    },
+    {
+      "id": "persimmon",
+      "title": "柿子、脆柿",
+      "start_mmdd": "09-20",
+      "end_mmdd": "11-15",
+      "note": "秋季重点水果，品种及脱涩处理影响口感。",
+      "confidence": "高",
+      "refs": [
+        "autumn"
+      ]
+    },
+    {
+      "id": "apple",
+      "title": "🍎 新季苹果",
+      "start_mmdd": "10-01",
+      "end_mmdd": "11-30",
+      "note": "秋季新果；非全年供应期，强调新季口感。",
+      "confidence": "中",
+      "refs": [
+        "broad"
+      ]
+    },
+    {
+      "id": "pomelo",
+      "title": "柚子（蜜柚、红心柚）",
+      "start_mmdd": "10-01",
+      "end_mmdd": "12-15",
+      "note": "秋冬主产区集中上量。",
+      "confidence": "中",
+      "refs": [
+        "broad"
+      ]
+    }
+  ],
+  "overrides": {
+    "strawberry-2026": {
+      "status": "early-supply",
+      "note": "2026-11-24 上海上钢集贸市场青浦草莓约25–30元/斤；丹东批发行情此前一周下跌10–15%。12月集中供应预期，尚待验证。",
+      "refs": [
+        "strawNews",
+        "market"
+      ]
+    },
+    "chilean-cherry-2026": {
+      "status": "airfreight-available",
+      "note": "2026-11-19上海西郊国际早季价格同比降10–20%；11月12日零售2J约59.8元/斤、3J约79.8元/斤；海运集中抵达待确认。",
+      "refs": [
+        "cherry",
+        "cherry2"
+      ]
+    }
+  },
+  "horizon": {
+    "first_season_year": 2026,
+    "last_season_year": 2028
+  },
+  "update_policy": "Weekly evidence-based review; keep stable UIDs; adjust only with credible current-season supply/retail evidence; distinguish observed data from estimates."
+}

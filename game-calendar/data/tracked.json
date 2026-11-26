@@ -38,7 +38,7 @@
       "platform": "PS5 / PC",
       "monitor": "blizzard",
       "source_url": "https://news.blizzard.com/en-us/feed/diablo-4",
-      "next_to_watch": "S16预计美西2026-12-01（北京时间2026-12-02 02:00），根据S15游戏内Reliquary倒计时推测；官方待确认，2026-11-25 03:00北京时间开发者直播",
+      "next_to_watch": "S16「泰瑞尔之谋」国服 2026-12-02 01:30 开启；战网 3.3.0 预下载 2026-12-01 02:00（均为北京时间，国服官方已确认）",
       "interests": [
         "新赛季开服",
         "资料片",
@@ -96,6 +96,16 @@
       "type": "livestream",
       "source_url": "https://news.blizzard.com/en-gb/article/24315746/join-our-next-developer-update-livestream",
       "verified_at": "2026-11-23T09:30:00Z"
+    },
+    {
+      "id": "diablo4-s16-cn-start",
+      "game_id": "diablo4",
+      "title": "🎮 暗黑4 S16｜国服开启",
+      "date": "2026-12-02",
+      "start_at": "2026-12-02T01:30:00+08:00",
+      "type": "season",
+      "source_url": "https://d4.blizzard.cn/news/24316979/index.html",
+      "verified_at": "2026-11-26T14:28:00Z"
     }
   ]
 }

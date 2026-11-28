@@ -62,11 +62,13 @@ def build_ics(cfg):
         lines.extend(["BEGIN:VEVENT", "UID:" + stable_uid + "@ricardozhangfan.game-calendar",
                       "DTSTAMP:" + now] + date_fields + [
                       "SUMMARY:" + esc(event["title"]),
-                      "DESCRIPTION:" + esc("平台：" + games[event["game_id"]]["platform"] + "\n来源：" + event["source_url"]),
-                      "URL:" + event["source_url"], "STATUS:CONFIRMED", "TRANSP:TRANSPARENT"])
-        for days in cfg["calendar"]["reminder_days"]:
+                      "DESCRIPTION:" + esc(event.get("description") or ("平台：" + games[event["game_id"]]["platform"] + "\n来源：" + event.get("source_url", "")))])
+        if event.get("source_url"):
+            lines.append("URL:" + event["source_url"])
+        lines.extend(["STATUS:CONFIRMED", "TRANSP:TRANSPARENT"])
+        for days in event.get("reminder_days", cfg["calendar"]["reminder_days"]):
             lines.extend(["BEGIN:VALARM", "ACTION:DISPLAY", "DESCRIPTION:" + esc(event["title"]),
-                          "TRIGGER;RELATED=START:-P" + str(days) + "D", "END:VALARM"])
+                          "TRIGGER;RELATED=START:" + ("PT0S" if days == 0 else "-P" + str(days) + "D"), "END:VALARM"])
         lines.append("END:VEVENT")
     lines.append("END:VCALENDAR")
     out = "\r\n".join(part for line in lines for part in folded(line)) + "\r\n"
@@ -86,6 +88,8 @@ def monitor(cfg):
     findings = []
     reports = []
     for g in cfg["games"]:
+        if g.get("monitor") == "manual":
+            continue
         urls = [g["source_url"]]
         if g.get("steam_app_id"):
             urls.insert(0, "https://store.steampowered.com/api/appdetails?appids=" + str(g["steam_app_id"]) + "&cc=us&l=english")

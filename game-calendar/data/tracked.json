@@ -57,6 +57,12 @@
         "重大 DLC"
       ],
       "next_to_watch": "地平线 6 PS5 版 2027-01-26，Premium 提前体验 2027-01-21"
+    },
+    {
+      "id": "psplus",
+      "name": "PS Plus",
+      "platform": "PS5",
+      "monitor": "manual"
     }
   ],
   "events": [
@@ -106,6 +112,51 @@
       "type": "season",
       "source_url": "https://d4.blizzard.cn/news/24316979/index.html",
       "verified_at": "2026-11-26T14:28:00Z"
+    },
+    {
+      "id": "psplus-2027-month",
+      "game_id": "psplus",
+      "title": "🎮 PS Plus 会员｜距离到期还有一个月",
+      "date": "2027-01-14",
+      "start_at": "2027-01-14T09:00:00+08:00",
+      "type": "subscription",
+      "description": "会员到期日：2027-02-14",
+      "reminder_days": [
+        0
+      ]
+    },
+    {
+      "id": "psplus-2027-week",
+      "game_id": "psplus",
+      "title": "🎮 PS Plus 会员｜距离到期还有一周",
+      "date": "2027-02-07",
+      "start_at": "2027-02-07T09:00:00+08:00",
+      "type": "subscription",
+      "description": "会员到期日：2027-02-14",
+      "reminder_days": [
+        0
+      ]
+    },
+    {
+      "id": "psplus-2027-day",
+      "game_id": "psplus",
+      "title": "🎮 PS Plus 会员｜明天到期",
+      "date": "2027-02-13",
+      "start_at": "2027-02-13T09:00:00+08:00",
+      "type": "subscription",
+      "description": "会员到期日：2027-02-14",
+      "reminder_days": [
+        0
+      ]
+    },
+    {
+      "id": "psplus-2027-expiry",
+      "game_id": "psplus",
+      "title": "🎮 PS Plus 会员｜今日到期",
+      "date": "2027-02-14",
+      "type": "subscription",
+      "description": "会员到期日：2027-02-14",
+      "reminder_days": []
     }
   ]
 }
